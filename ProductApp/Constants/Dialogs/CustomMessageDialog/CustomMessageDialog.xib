@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="EudoxusSans-Bold.ttf">
+            <string>EudoxusSans-Bold</string>
+        </array>
+        <array key="EudoxusSans-Medium.ttf">
+            <string>EudoxusSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomMessageDialog" customModule="ProductApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnTamam" destination="xbx-Ms-O3Z" id="Swa-N7-ocF"/>
+                <outlet property="imageView" destination="tBU-ZG-elD" id="gr7-Tt-sAy"/>
+                <outlet property="lblBody" destination="hcY-mf-nMU" id="syz-eY-9cx"/>
+                <outlet property="lblTitle" destination="WLu-sL-VAN" id="NhK-Rb-tMT"/>
+                <outlet property="view" destination="y7I-HE-E7n" id="zV9-kP-6RZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="y7I-HE-E7n">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messageBg" translatesAutoresizingMaskIntoConstraints="NO" id="gpF-4E-EmQ">
+                    <rect key="frame" x="0.0" y="561" width="414" height="325"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-Ms-O3Z">
+                    <rect key="frame" x="20" y="784" width="374" height="52"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="xMk-yP-pGy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tBU-ZG-elD">
+                    <rect key="frame" x="192" y="581" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="ONI-99-4yE"/>
+                        <constraint firstAttribute="height" constant="30" id="v6b-1K-7cP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLu-sL-VAN">
+                    <rect key="frame" x="20" y="621" width="374" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="vXR-k2-PQy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="EudoxusSans-Bold" family="Eudoxus Sans" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-mf-nMU">
+                    <rect key="frame" x="20" y="661" width="374" height="113"/>
+                    <fontDescription key="fontDescription" name="EudoxusSans-Medium" family="Eudoxus Sans" pointSize="14"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="K5L-bZ-twO"/>
+            <constraints>
+                <constraint firstItem="tBU-ZG-elD" firstAttribute="top" secondItem="gpF-4E-EmQ" secondAttribute="top" constant="20" id="79J-ye-kSr"/>
+                <constraint firstItem="hcY-mf-nMU" firstAttribute="top" secondItem="WLu-sL-VAN" secondAttribute="bottom" constant="10" id="8zM-ka-zv3"/>
+                <constraint firstAttribute="trailing" secondItem="hcY-mf-nMU" secondAttribute="trailing" constant="20" id="Iqt-0e-Yxq"/>
+                <constraint firstAttribute="bottom" secondItem="gpF-4E-EmQ" secondAttribute="bottom" id="Whq-zh-GFJ"/>
+                <constraint firstItem="xbx-Ms-O3Z" firstAttribute="leading" secondItem="y7I-HE-E7n" secondAttribute="leading" constant="20" id="ZeA-bL-mpH"/>
+                <constraint firstAttribute="bottom" secondItem="xbx-Ms-O3Z" secondAttribute="bottom" constant="50" id="aUV-ej-On4"/>
+                <constraint firstAttribute="trailing" secondItem="xbx-Ms-O3Z" secondAttribute="trailing" constant="20" id="bLh-ck-kCf"/>
+                <constraint firstItem="gpF-4E-EmQ" firstAttribute="trailing" secondItem="y7I-HE-E7n" secondAttribute="trailing" id="cJO-Vu-eLt"/>
+                <constraint firstAttribute="trailing" secondItem="WLu-sL-VAN" secondAttribute="trailing" constant="20" id="eyP-dd-DJp"/>
+                <constraint firstItem="gpF-4E-EmQ" firstAttribute="leading" secondItem="y7I-HE-E7n" secondAttribute="leading" id="gEQ-9K-Awd"/>
+                <constraint firstItem="hcY-mf-nMU" firstAttribute="leading" secondItem="y7I-HE-E7n" secondAttribute="leading" constant="20" id="gnw-h4-ZmC"/>
+                <constraint firstItem="WLu-sL-VAN" firstAttribute="top" secondItem="tBU-ZG-elD" secondAttribute="bottom" constant="10" id="oMC-Td-ZpV"/>
+                <constraint firstItem="WLu-sL-VAN" firstAttribute="leading" secondItem="y7I-HE-E7n" secondAttribute="leading" constant="20" id="sWr-e5-los"/>
+                <constraint firstItem="tBU-ZG-elD" firstAttribute="centerX" secondItem="y7I-HE-E7n" secondAttribute="centerX" id="ttf-UR-C4t"/>
+                <constraint firstItem="xbx-Ms-O3Z" firstAttribute="top" secondItem="hcY-mf-nMU" secondAttribute="bottom" constant="10" id="uhB-tB-11g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="605" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="messageBg" width="375" height="325"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
